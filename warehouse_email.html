@@ -18,10 +18,42 @@
   }
 
   @media only screen and (max-width: 480px)  {
+    .mobile_content {
+      max-width: 100% !important;
+    }
+
+    .mobile_content {
+      width: 98% !important;
+      max-height: none !important;
+      margin-left: 5px !important;
+      margin-right: 5px !important;
+    } 
+
     .appleLinks a {
       color: #f96b42;
       text-decoration: none;
     }
+
+    .mobile_social {
+      width: 120px !important;
+      margin: 0 auto !important;
+      height: auto !important;
+      max-height: none !important;
+      text-align: center !important;
+    }
+
+    .mobile_social td {
+      padding: 0 !important;
+      margin: 0 !important;
+      max-width: 30px !important;
+      text-align: center !important;
+    }
+
+    .mobile_social img {
+      max-width: 30px !important;
+      height: auto !important;
+      max-height: none !important;
+    }     
   }
 
 </style>
@@ -43,12 +75,15 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
 </script>
 <!-- END AMPSCRIPT -->
 
+<!-- BEGIN EMAIL BODY -->
 
+<!-- BEGIN BODY -->
 <body style="margin: 0; padding: 0;"><!-- Start of preheader -->
-  <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="655" style="margin: 0 auto;">
+  <!-- BEGIN CONTENT -->
+  <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="650" style="margin: 0 auto;" class="mobile_content">
       <tr>
         <td>
-          <table width="650"  cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto;">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto;">
               <tr>
                 <td width="100%" style="padding: 20px;">
                   <span style="font-family:Georgia,Helvetica,sans-serif;; font-size: 15px; color: #000000; font-weight: 100; margin-bottom: 35px;">
@@ -130,28 +165,18 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
                     <br>
                 </td>
               </tr>
-            </tbody>
           </table>
-        </td>
-      </tr>
-    </td>
-  </tr>
+          <!-- END CONTENT -->
 
-  <tr> 
-    <td align="center"> 
-      <tr> 
-        <td align="center"> 
-        </td> 
-      </tr> 
-
-      <tr> 
-        <td align="center"> 
-          <table cellpadding="0" cellspacing="0" border="0" align="center" width="650" style="margin: 0 auto;"> 
+          <!-- BEGIN FOOTER -->
+          <table cellpadding="0" cellspacing="0" border="0" align="center" width="650" style="margin: 0 auto;" class="mobile_content"> 
             <tr> 
               <td style="color: #999; font-family:Helvetica,sans-serif;; font-size: 9px; padding-top: 20px; padding-bottom:15px; text-align: center">
                 %%xtyear%% One Kings Lane&reg; All rights reserved. One Kings Lane and the elephant logo are registered trademarks of One Kings Lane Inc. 
-                <br /> 
                 <br> 
+                <br>  
+                  <font style="color: #999; font-family:Helvetica, sans-serif, Arial; font-size: 9px;padding-bottom: 5px;display: block;"><span class="apple_links">Address: 315 Hudson Street, 8th Floor New York, NY 10013</span></font>
+                <br>
                 <br>
                 <a href="https://www.onekingslane.com/privacy?UTM_source=Corporate&utm_medium=Launch&utm_campaign=%%=v(jobid)=%%&utm_content=%%xtshortdate%%.%%_subscriberkey%%.%%=v(@Email_Type)=%%&utm_term=Footer.PrivacyPolicy" style="text-decoration:none; color: #999; font-size: 10px;">
                   PRIVACY POLICY
@@ -173,7 +198,7 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
 
             <tr> 
               <td align="center"> 
-                <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 110px;"> 
+                <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 110px;" class="mobile_social"> 
                   <tr> 
                     <td style="padding-right:3px; padding-top:10px;">
                       <a href="http://www.facebook.com/OneKingsLane" border="0">
